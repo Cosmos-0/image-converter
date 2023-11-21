@@ -53,15 +53,15 @@ function App() {
           <option value="jpeg">JPEG</option>
           <option value="png">PNG</option>
           <option value="webp">WebP</option>
-          <option value="webp">GIF</option>
-          <option value="webp">AVIF</option>
+          <option value="GIF">GIF</option>
+          <option value="AVIF">AVIF</option>
         </select>
         <button
           onClick={handleSubmit}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           disabled={isLoading}
         >
-          {isLoading ? 'Converting...' : 'Convert'}
+          {isLoading ? "Converting..." : "Convert"}
         </button>
       </header>
     </div>
