@@ -24,7 +24,7 @@ const upload = multer({ dest: "uploads/" });
 app.use(express.static(path.join(__dirname, "build")));
   app.use(
     cors({
-      origin: "*",
+      origin: "https://image-converter-frontend.vercel.app/",
     })
   );
 
