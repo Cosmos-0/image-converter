@@ -22,7 +22,11 @@ const app = express();
 const upload = multer({ dest: "uploads/" });
 
 app.use(express.static(path.join(__dirname, "build")));
-app.use(cors());
+  app.use(
+    cors({
+      origin: "*",
+    })
+  );
 
 app.post("/convert", upload.single("image"), async (req, res) => {
   const format = req.body.format;
