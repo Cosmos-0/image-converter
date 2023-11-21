@@ -24,10 +24,13 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://image-converter-cpmqhxysm-cosmos-0s-projects.vercel.app/convert', {
-        method: 'POST',
-        body: formData,
-      });
+      const response = await fetch(
+        "https://image-converter-backend-4zej.onrender.com/convert",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
 
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
