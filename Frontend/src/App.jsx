@@ -24,7 +24,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://image-converter-plum.vercel.app/convert', {
+      const response = await fetch('https://image-converter-cpmqhxysm-cosmos-0s-projects.vercel.app/convert', {
         method: 'POST',
         body: formData,
       });
